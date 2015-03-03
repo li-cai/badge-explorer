@@ -13,6 +13,8 @@
 		3D993CC11AA5917700FCEAF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D993CC01AA5917700FCEAF5 /* Images.xcassets */; };
 		3D993CC41AA5917700FCEAF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D993CC21AA5917700FCEAF5 /* LaunchScreen.xib */; };
 		3D993CD01AA5917700FCEAF5 /* BadgeExplorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CCF1AA5917700FCEAF5 /* BadgeExplorerTests.m */; };
+		3D993CDB1AA5959400FCEAF5 /* CLMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CDA1AA5959400FCEAF5 /* CLMenuViewController.m */; };
+		6753D5C949B23E95469035A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F08C69957A2D40E0A2AB511 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F08C69957A2D40E0A2AB511 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D993CAD1AA5917700FCEAF5 /* BadgeExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BadgeExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D993CB11AA5917700FCEAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D993CB21AA5917700FCEAF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,6 +40,10 @@
 		3D993CC91AA5917700FCEAF5 /* BadgeExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BadgeExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D993CCE1AA5917700FCEAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D993CCF1AA5917700FCEAF5 /* BadgeExplorerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadgeExplorerTests.m; sourceTree = "<group>"; };
+		3D993CD91AA5959400FCEAF5 /* CLMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMenuViewController.h; sourceTree = "<group>"; };
+		3D993CDA1AA5959400FCEAF5 /* CLMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMenuViewController.m; sourceTree = "<group>"; };
+		850EDFA91B0ED379CAA3A538 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AF8B29AB1AF7944D69192DBD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6753D5C949B23E95469035A0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,12 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		084929911E569D8FCD4CCD9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF8B29AB1AF7944D69192DBD /* Pods.debug.xcconfig */,
+				850EDFA91B0ED379CAA3A538 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3D993CA41AA5917700FCEAF5 = {
 			isa = PBXGroup;
 			children = (
 				3D993CAF1AA5917700FCEAF5 /* BadgeExplorer */,
 				3D993CCC1AA5917700FCEAF5 /* BadgeExplorerTests */,
 				3D993CAE1AA5917700FCEAF5 /* Products */,
+				084929911E569D8FCD4CCD9F /* Pods */,
+				BE7AFF21B0FE06010364730F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +97,8 @@
 		3D993CAF1AA5917700FCEAF5 /* BadgeExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				3D993CDD1AA595EA00FCEAF5 /* Models */,
+				3D993CDC1AA595CF00FCEAF5 /* ViewControllers */,
 				3D993CB41AA5917700FCEAF5 /* AppDelegate.h */,
 				3D993CB51AA5917700FCEAF5 /* AppDelegate.m */,
 				3D993CC01AA5917700FCEAF5 /* Images.xcassets */,
@@ -114,6 +135,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3D993CDC1AA595CF00FCEAF5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D993CD91AA5959400FCEAF5 /* CLMenuViewController.h */,
+				3D993CDA1AA5959400FCEAF5 /* CLMenuViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D993CDD1AA595EA00FCEAF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BE7AFF21B0FE06010364730F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F08C69957A2D40E0A2AB511 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D993CD31AA5917700FCEAF5 /* Build configuration list for PBXNativeTarget "BadgeExplorer" */;
 			buildPhases = (
+				7B3F059E68A2C0F9D09B5C78 /* Check Pods Manifest.lock */,
 				3D993CA91AA5917700FCEAF5 /* Sources */,
 				3D993CAA1AA5917700FCEAF5 /* Frameworks */,
 				3D993CAB1AA5917700FCEAF5 /* Resources */,
+				88EE614BC0A00048C7FECDFF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,11 +255,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B3F059E68A2C0F9D09B5C78 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88EE614BC0A00048C7FECDFF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3D993CA91AA5917700FCEAF5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D993CDB1AA5959400FCEAF5 /* CLMenuViewController.m in Sources */,
 				3D993CB61AA5917700FCEAF5 /* AppDelegate.m in Sources */,
 				3D993CB91AA5917700FCEAF5 /* BadgeExplorer.xcdatamodeld in Sources */,
 				3D993CB31AA5917700FCEAF5 /* main.m in Sources */,
@@ -329,6 +410,7 @@
 		};
 		3D993CD41AA5917700FCEAF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF8B29AB1AF7944D69192DBD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BadgeExplorer/Info.plist;
@@ -340,6 +422,7 @@
 		};
 		3D993CD51AA5917700FCEAF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850EDFA91B0ED379CAA3A538 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BadgeExplorer/Info.plist;
@@ -402,6 +485,7 @@
 				3D993CD51AA5917700FCEAF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D993CD61AA5917700FCEAF5 /* Build configuration list for PBXNativeTarget "BadgeExplorerTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +494,7 @@
 				3D993CD81AA5917700FCEAF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
