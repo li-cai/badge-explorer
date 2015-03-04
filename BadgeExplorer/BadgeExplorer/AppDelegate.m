@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "BEMenuViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    BEMenuViewController *menuVC = [[BEMenuViewController alloc] init];
+
+    UINavigationController *navigationController =
+        [[UINavigationController alloc] initWithRootViewController:menuVC];
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setRootViewController:navigationController];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

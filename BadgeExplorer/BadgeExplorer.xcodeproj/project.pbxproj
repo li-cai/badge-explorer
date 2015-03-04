@@ -13,7 +13,9 @@
 		3D993CC11AA5917700FCEAF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D993CC01AA5917700FCEAF5 /* Images.xcassets */; };
 		3D993CC41AA5917700FCEAF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D993CC21AA5917700FCEAF5 /* LaunchScreen.xib */; };
 		3D993CD01AA5917700FCEAF5 /* BadgeExplorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CCF1AA5917700FCEAF5 /* BadgeExplorerTests.m */; };
-		3D993CDB1AA5959400FCEAF5 /* CLMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CDA1AA5959400FCEAF5 /* CLMenuViewController.m */; };
+		3D993CE11AA7A52200FCEAF5 /* BEMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CE01AA7A52200FCEAF5 /* BEMenuViewController.m */; };
+		3D993CE41AA7A69900FCEAF5 /* UIColor+BE.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CE31AA7A69900FCEAF5 /* UIColor+BE.m */; };
+		3D993CE71AA7AC5F00FCEAF5 /* Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CE61AA7AC5F00FCEAF5 /* Badge.m */; };
 		6753D5C949B23E95469035A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F08C69957A2D40E0A2AB511 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -40,8 +42,12 @@
 		3D993CC91AA5917700FCEAF5 /* BadgeExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BadgeExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D993CCE1AA5917700FCEAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D993CCF1AA5917700FCEAF5 /* BadgeExplorerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadgeExplorerTests.m; sourceTree = "<group>"; };
-		3D993CD91AA5959400FCEAF5 /* CLMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMenuViewController.h; sourceTree = "<group>"; };
-		3D993CDA1AA5959400FCEAF5 /* CLMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLMenuViewController.m; sourceTree = "<group>"; };
+		3D993CDF1AA7A52200FCEAF5 /* BEMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMenuViewController.h; sourceTree = "<group>"; };
+		3D993CE01AA7A52200FCEAF5 /* BEMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMenuViewController.m; sourceTree = "<group>"; };
+		3D993CE21AA7A69900FCEAF5 /* UIColor+BE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BE.h"; sourceTree = "<group>"; };
+		3D993CE31AA7A69900FCEAF5 /* UIColor+BE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BE.m"; sourceTree = "<group>"; };
+		3D993CE51AA7AC5F00FCEAF5 /* Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badge.h; sourceTree = "<group>"; };
+		3D993CE61AA7AC5F00FCEAF5 /* Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Badge.m; sourceTree = "<group>"; };
 		850EDFA91B0ED379CAA3A538 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AF8B29AB1AF7944D69192DBD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,6 +105,7 @@
 			children = (
 				3D993CDD1AA595EA00FCEAF5 /* Models */,
 				3D993CDC1AA595CF00FCEAF5 /* ViewControllers */,
+				3D993CDE1AA7A4AE00FCEAF5 /* Categories */,
 				3D993CB41AA5917700FCEAF5 /* AppDelegate.h */,
 				3D993CB51AA5917700FCEAF5 /* AppDelegate.m */,
 				3D993CC01AA5917700FCEAF5 /* Images.xcassets */,
@@ -138,8 +145,8 @@
 		3D993CDC1AA595CF00FCEAF5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3D993CD91AA5959400FCEAF5 /* CLMenuViewController.h */,
-				3D993CDA1AA5959400FCEAF5 /* CLMenuViewController.m */,
+				3D993CDF1AA7A52200FCEAF5 /* BEMenuViewController.h */,
+				3D993CE01AA7A52200FCEAF5 /* BEMenuViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -147,8 +154,19 @@
 		3D993CDD1AA595EA00FCEAF5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3D993CE51AA7AC5F00FCEAF5 /* Badge.h */,
+				3D993CE61AA7AC5F00FCEAF5 /* Badge.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		3D993CDE1AA7A4AE00FCEAF5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3D993CE21AA7A69900FCEAF5 /* UIColor+BE.h */,
+				3D993CE31AA7A69900FCEAF5 /* UIColor+BE.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		BE7AFF21B0FE06010364730F /* Frameworks */ = {
@@ -293,8 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D993CDB1AA5959400FCEAF5 /* CLMenuViewController.m in Sources */,
+				3D993CE41AA7A69900FCEAF5 /* UIColor+BE.m in Sources */,
+				3D993CE11AA7A52200FCEAF5 /* BEMenuViewController.m in Sources */,
 				3D993CB61AA5917700FCEAF5 /* AppDelegate.m in Sources */,
+				3D993CE71AA7AC5F00FCEAF5 /* Badge.m in Sources */,
 				3D993CB91AA5917700FCEAF5 /* BadgeExplorer.xcdatamodeld in Sources */,
 				3D993CB31AA5917700FCEAF5 /* main.m in Sources */,
 			);
