@@ -13,8 +13,8 @@
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *blurb;
-@property (nonatomic, assign) NSUInteger *index;
-@property (nonatomic) UIImage *smallIcon;
-@property (nonatomic) UIImage *largeIcon;
+@property (nonatomic, assign) NSUInteger index;
+@property (nonatomic) NSURL *smallIconURL;
+@property (nonatomic) NSURL *largeIconURL;
 
 @end
