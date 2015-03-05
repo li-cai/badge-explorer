@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "BEMenuViewController.h"
+#import "UIColor+BE.h"
 
 @interface AppDelegate ()
 
@@ -27,6 +28,14 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setRootViewController:navigationController];
     [self.window makeKeyAndVisible];
+
+    [[UINavigationBar appearance] setTranslucent:NO];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor navyColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor leafColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:
+        @{NSForegroundColorAttributeName : [UIColor whiteColor],
+          NSFontAttributeName : [UIFont fontWithName:@"Avenir" size:18.f]
+         }];
 
     return YES;
 }
