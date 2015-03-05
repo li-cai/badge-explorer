@@ -31,7 +31,6 @@
         NSURL *url = [NSURL URLWithString:self.urlString];
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
 
-        // Cancel current connection
         if (self.connection) {
             [self.connection cancel];
             self.connection = nil;
@@ -54,14 +53,12 @@
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    NSLog(@"Request failed with error message: %@", error);
+    NSLog(@"Request failed with error: %@", error);
     self.connection = nil;
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    NSLog(@"FINI");
-
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
 
     NSError *jsonError;
@@ -69,9 +66,11 @@
                                                             options:NSJSONReadingMutableLeaves
                                                               error:&jsonError];
     if (!jsonError) {
-        NSLog(@"%@", results);
+        self.connectionFinished(results);
     }
-
+    else {
+        NSLog(@"JSON Serialization failed with error: %@", jsonError);
+    }
 }
 
 @end

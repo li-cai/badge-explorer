@@ -11,6 +11,8 @@
 
 @interface BEConnectionHelper : NSURLConnection
 
+@property (nonatomic, copy) void (^connectionFinished)(NSDictionary *);
+
 - (instancetype)initWithURLString:(NSString *)requestString;
 - (void)sendRequest;
 
