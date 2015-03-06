@@ -10,4 +10,17 @@
 
 @implementation BECategoryButton
 
+- (instancetype)initWithCategory:(BECategory *)category {
+    self = [super init];
+
+    if (self) {
+        self.category = category;
+
+        UIImage *icon = [UIImage imageWithData:[NSData dataWithContentsOfURL:category.largeIconURL]];
+        [self setImage:icon forState:UIControlStateNormal];
+    }
+
+    return self;
+}
+
 @end

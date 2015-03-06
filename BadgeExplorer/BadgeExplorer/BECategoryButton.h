@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "BECategory.h"
+
 @interface BECategoryButton : UIButton
+
+@property (nonatomic) BECategory *category;
+
+- (instancetype)initWithCategory:(BECategory *)category;
 
 @end
