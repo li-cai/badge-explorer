@@ -3,3 +3,4 @@ source 'https://github.com/CocoaPods/Specs.git'
 xcodeproj 'BadgeExplorer'
 
 pod 'Masonry', '~> 0.6.0'
+pod 'SDWebImage', '~>3.6'
