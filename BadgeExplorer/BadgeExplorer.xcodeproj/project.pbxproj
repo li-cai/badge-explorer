@@ -11,11 +11,17 @@
 		3D993CB61AA5917700FCEAF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CB51AA5917700FCEAF5 /* AppDelegate.m */; };
 		3D993CB91AA5917700FCEAF5 /* BadgeExplorer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CB71AA5917700FCEAF5 /* BadgeExplorer.xcdatamodeld */; };
 		3D993CC11AA5917700FCEAF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D993CC01AA5917700FCEAF5 /* Images.xcassets */; };
-		3D993CC41AA5917700FCEAF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D993CC21AA5917700FCEAF5 /* LaunchScreen.xib */; };
 		3D993CD01AA5917700FCEAF5 /* BadgeExplorerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CCF1AA5917700FCEAF5 /* BadgeExplorerTests.m */; };
 		3D993CE11AA7A52200FCEAF5 /* BEMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CE01AA7A52200FCEAF5 /* BEMenuViewController.m */; };
 		3D993CE41AA7A69900FCEAF5 /* UIColor+BE.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CE31AA7A69900FCEAF5 /* UIColor+BE.m */; };
-		3D993CE71AA7AC5F00FCEAF5 /* Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CE61AA7AC5F00FCEAF5 /* Badge.m */; };
+		3D993CE71AA7AC5F00FCEAF5 /* BEBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CE61AA7AC5F00FCEAF5 /* BEBadge.m */; };
+		3D993CF01AA80AE300FCEAF5 /* BEConnectionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CEF1AA80AE300FCEAF5 /* BEConnectionHelper.m */; };
+		3D993CF31AA828CA00FCEAF5 /* BECategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CF21AA828CA00FCEAF5 /* BECategory.m */; };
+		3D993CF71AA8316A00FCEAF5 /* BEPrimaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CF61AA8316A00FCEAF5 /* BEPrimaryButton.m */; };
+		3D993CFA1AA8394100FCEAF5 /* BEBadgeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CF91AA8394100FCEAF5 /* BEBadgeTableViewController.m */; };
+		3D993CFD1AA844CD00FCEAF5 /* BEBadgeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CFC1AA844CD00FCEAF5 /* BEBadgeTableViewCell.m */; };
+		3D993D001AA85BC300FCEAF5 /* BEBadgeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993CFF1AA85BC300FCEAF5 /* BEBadgeDetailViewController.m */; };
+		3D993D031AA86E6800FCEAF5 /* BECategoryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D993D021AA86E6800FCEAF5 /* BECategoryButton.m */; };
 		6753D5C949B23E95469035A0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F08C69957A2D40E0A2AB511 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +44,6 @@
 		3D993CB51AA5917700FCEAF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3D993CB81AA5917700FCEAF5 /* BadgeExplorer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BadgeExplorer.xcdatamodel; sourceTree = "<group>"; };
 		3D993CC01AA5917700FCEAF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3D993CC31AA5917700FCEAF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3D993CC91AA5917700FCEAF5 /* BadgeExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BadgeExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D993CCE1AA5917700FCEAF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D993CCF1AA5917700FCEAF5 /* BadgeExplorerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BadgeExplorerTests.m; sourceTree = "<group>"; };
@@ -46,8 +51,22 @@
 		3D993CE01AA7A52200FCEAF5 /* BEMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMenuViewController.m; sourceTree = "<group>"; };
 		3D993CE21AA7A69900FCEAF5 /* UIColor+BE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BE.h"; sourceTree = "<group>"; };
 		3D993CE31AA7A69900FCEAF5 /* UIColor+BE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BE.m"; sourceTree = "<group>"; };
-		3D993CE51AA7AC5F00FCEAF5 /* Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badge.h; sourceTree = "<group>"; };
-		3D993CE61AA7AC5F00FCEAF5 /* Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Badge.m; sourceTree = "<group>"; };
+		3D993CE51AA7AC5F00FCEAF5 /* BEBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBadge.h; sourceTree = "<group>"; };
+		3D993CE61AA7AC5F00FCEAF5 /* BEBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBadge.m; sourceTree = "<group>"; };
+		3D993CEE1AA80AE300FCEAF5 /* BEConnectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEConnectionHelper.h; sourceTree = "<group>"; };
+		3D993CEF1AA80AE300FCEAF5 /* BEConnectionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEConnectionHelper.m; sourceTree = "<group>"; };
+		3D993CF11AA828CA00FCEAF5 /* BECategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BECategory.h; sourceTree = "<group>"; };
+		3D993CF21AA828CA00FCEAF5 /* BECategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BECategory.m; sourceTree = "<group>"; };
+		3D993CF51AA8316A00FCEAF5 /* BEPrimaryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEPrimaryButton.h; sourceTree = "<group>"; };
+		3D993CF61AA8316A00FCEAF5 /* BEPrimaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEPrimaryButton.m; sourceTree = "<group>"; };
+		3D993CF81AA8394100FCEAF5 /* BEBadgeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBadgeTableViewController.h; sourceTree = "<group>"; };
+		3D993CF91AA8394100FCEAF5 /* BEBadgeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBadgeTableViewController.m; sourceTree = "<group>"; };
+		3D993CFB1AA844CD00FCEAF5 /* BEBadgeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBadgeTableViewCell.h; sourceTree = "<group>"; };
+		3D993CFC1AA844CD00FCEAF5 /* BEBadgeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBadgeTableViewCell.m; sourceTree = "<group>"; };
+		3D993CFE1AA85BC300FCEAF5 /* BEBadgeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEBadgeDetailViewController.h; sourceTree = "<group>"; };
+		3D993CFF1AA85BC300FCEAF5 /* BEBadgeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEBadgeDetailViewController.m; sourceTree = "<group>"; };
+		3D993D011AA86E6800FCEAF5 /* BECategoryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BECategoryButton.h; sourceTree = "<group>"; };
+		3D993D021AA86E6800FCEAF5 /* BECategoryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BECategoryButton.m; sourceTree = "<group>"; };
 		850EDFA91B0ED379CAA3A538 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AF8B29AB1AF7944D69192DBD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,12 +123,14 @@
 			isa = PBXGroup;
 			children = (
 				3D993CDD1AA595EA00FCEAF5 /* Models */,
-				3D993CDC1AA595CF00FCEAF5 /* ViewControllers */,
+				3D993CF41AA8314400FCEAF5 /* Views */,
+				3D993CDC1AA595CF00FCEAF5 /* Controllers */,
 				3D993CDE1AA7A4AE00FCEAF5 /* Categories */,
+				3D993CEE1AA80AE300FCEAF5 /* BEConnectionHelper.h */,
+				3D993CEF1AA80AE300FCEAF5 /* BEConnectionHelper.m */,
 				3D993CB41AA5917700FCEAF5 /* AppDelegate.h */,
 				3D993CB51AA5917700FCEAF5 /* AppDelegate.m */,
 				3D993CC01AA5917700FCEAF5 /* Images.xcassets */,
-				3D993CC21AA5917700FCEAF5 /* LaunchScreen.xib */,
 				3D993CB71AA5917700FCEAF5 /* BadgeExplorer.xcdatamodeld */,
 				3D993CB01AA5917700FCEAF5 /* Supporting Files */,
 			);
@@ -142,20 +163,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3D993CDC1AA595CF00FCEAF5 /* ViewControllers */ = {
+		3D993CDC1AA595CF00FCEAF5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				3D993CDF1AA7A52200FCEAF5 /* BEMenuViewController.h */,
 				3D993CE01AA7A52200FCEAF5 /* BEMenuViewController.m */,
+				3D993CF81AA8394100FCEAF5 /* BEBadgeTableViewController.h */,
+				3D993CF91AA8394100FCEAF5 /* BEBadgeTableViewController.m */,
+				3D993CFE1AA85BC300FCEAF5 /* BEBadgeDetailViewController.h */,
+				3D993CFF1AA85BC300FCEAF5 /* BEBadgeDetailViewController.m */,
 			);
-			name = ViewControllers;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		3D993CDD1AA595EA00FCEAF5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3D993CE51AA7AC5F00FCEAF5 /* Badge.h */,
-				3D993CE61AA7AC5F00FCEAF5 /* Badge.m */,
+				3D993CE51AA7AC5F00FCEAF5 /* BEBadge.h */,
+				3D993CE61AA7AC5F00FCEAF5 /* BEBadge.m */,
+				3D993CF11AA828CA00FCEAF5 /* BECategory.h */,
+				3D993CF21AA828CA00FCEAF5 /* BECategory.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -167,6 +194,19 @@
 				3D993CE31AA7A69900FCEAF5 /* UIColor+BE.m */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		3D993CF41AA8314400FCEAF5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D993CF51AA8316A00FCEAF5 /* BEPrimaryButton.h */,
+				3D993CF61AA8316A00FCEAF5 /* BEPrimaryButton.m */,
+				3D993CFB1AA844CD00FCEAF5 /* BEBadgeTableViewCell.h */,
+				3D993CFC1AA844CD00FCEAF5 /* BEBadgeTableViewCell.m */,
+				3D993D011AA86E6800FCEAF5 /* BECategoryButton.h */,
+				3D993D021AA86E6800FCEAF5 /* BECategoryButton.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		BE7AFF21B0FE06010364730F /* Frameworks */ = {
@@ -259,7 +299,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D993CC41AA5917700FCEAF5 /* LaunchScreen.xib in Resources */,
 				3D993CC11AA5917700FCEAF5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,10 +350,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D993CF01AA80AE300FCEAF5 /* BEConnectionHelper.m in Sources */,
+				3D993CF71AA8316A00FCEAF5 /* BEPrimaryButton.m in Sources */,
+				3D993CFA1AA8394100FCEAF5 /* BEBadgeTableViewController.m in Sources */,
+				3D993CF31AA828CA00FCEAF5 /* BECategory.m in Sources */,
+				3D993D001AA85BC300FCEAF5 /* BEBadgeDetailViewController.m in Sources */,
+				3D993CFD1AA844CD00FCEAF5 /* BEBadgeTableViewCell.m in Sources */,
 				3D993CE41AA7A69900FCEAF5 /* UIColor+BE.m in Sources */,
 				3D993CE11AA7A52200FCEAF5 /* BEMenuViewController.m in Sources */,
 				3D993CB61AA5917700FCEAF5 /* AppDelegate.m in Sources */,
-				3D993CE71AA7AC5F00FCEAF5 /* Badge.m in Sources */,
+				3D993D031AA86E6800FCEAF5 /* BECategoryButton.m in Sources */,
+				3D993CE71AA7AC5F00FCEAF5 /* BEBadge.m in Sources */,
 				3D993CB91AA5917700FCEAF5 /* BadgeExplorer.xcdatamodeld in Sources */,
 				3D993CB31AA5917700FCEAF5 /* main.m in Sources */,
 			);
@@ -337,17 +383,6 @@
 			targetProxy = 3D993CCA1AA5917700FCEAF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3D993CC21AA5917700FCEAF5 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D993CC31AA5917700FCEAF5 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3D993CD11AA5917700FCEAF5 /* Debug */ = {
@@ -434,7 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BadgeExplorer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -446,7 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BadgeExplorer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
