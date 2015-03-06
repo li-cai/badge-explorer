@@ -11,5 +11,7 @@
 @interface UIColor (BE)
 
 + (UIColor *)leafColor;
++ (UIColor *)darkGreenColor;
++ (UIColor *)navyColor;
 
 @end

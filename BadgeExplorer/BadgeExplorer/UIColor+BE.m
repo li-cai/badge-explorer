@@ -14,6 +14,14 @@
     return [UIColor colorWithHex:0x96ab4f];
 }
 
++ (UIColor *)darkGreenColor {
+    return [UIColor colorWithHex:0x819665];
+}
+
++ (UIColor *)navyColor {
+    return [UIColor colorWithHex:0x242e3b];
+}
+
 + (UIColor *)colorWithHex:(unsigned)rgbValue {
     return [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
                            green:((float)((rgbValue & 0x00FF00) >>  8))/255.0 \
