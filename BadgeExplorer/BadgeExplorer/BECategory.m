@@ -16,6 +16,7 @@
     if (self) {
         self.name = NSLocalizedString(@"No Name", nil);
         self.blurb = NSLocalizedString(@"No Description", nil);
+        self.badges = [NSMutableArray array];
     }
 
     return self;

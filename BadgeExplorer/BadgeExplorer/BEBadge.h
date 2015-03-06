@@ -13,7 +13,7 @@
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *blurb;
-@property (nonatomic, assign) NSUInteger category;
+@property (nonatomic, copy) NSString *category;
 @property (nonatomic, assign) NSUInteger points;
 @property (nonatomic) NSURL *smallIconURL;
 @property (nonatomic) NSURL *largeIconURL;
