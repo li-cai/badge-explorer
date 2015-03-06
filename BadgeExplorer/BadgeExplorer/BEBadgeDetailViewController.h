@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "BEBadge.h"
+
 @interface BEBadgeDetailViewController : UIViewController
+
+- (instancetype)initWithBadge:(BEBadge *)badge;
 
 @end
