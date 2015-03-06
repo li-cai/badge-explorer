@@ -9,6 +9,11 @@
 #import "BEBadgeTableViewController.h"
 
 #import "BEBadge.h"
+#import "BEBadgeDetailViewController.h"
+#import "BEBadgeTableViewCell.h"
+#import "Masonry.h"
+
+static const CGFloat kRowHeight = 95.f;
 
 @interface BEBadgeTableViewController ()
 
@@ -25,14 +30,12 @@
     if (self) {
         self.title = title;
         self.badges = badges;
+
+        [self.tableView setSeparatorInset:UIEdgeInsetsMake(0, 0, 0, 0)];
     }
 
     return self;
 }
-
-//- (void)viewDidLoad {
-//    self.navigationController.navigationBarHidden = NO;
-//}
 
 #pragma mark TableView Data Source
 
@@ -45,13 +48,21 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [[UITableViewCell alloc] init];
-
     BEBadge *badge = self.badges[indexPath.row];
-
-    cell.textLabel.text = badge.name;
+    BEBadgeTableViewCell *cell = [[BEBadgeTableViewCell alloc] initWithBadge:badge];
 
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    BEBadge *badge = self.badges[indexPath.row];
+    BEBadgeDetailViewController *badgeDetailVC = [[BEBadgeDetailViewController alloc] initWithBadge:badge];
+
+    [self.navigationController pushViewController:badgeDetailVC animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return kRowHeight;
 }
 
 @end

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "BEBadge.h"
+
 @interface BEBadgeTableViewCell : UITableViewCell
+
+- (instancetype)initWithBadge:(BEBadge *)badge;
 
 @end
