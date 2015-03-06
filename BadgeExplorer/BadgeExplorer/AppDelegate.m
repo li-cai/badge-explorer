@@ -29,6 +29,7 @@
     [self.window setRootViewController:navigationController];
     [self.window makeKeyAndVisible];
 
+    // customize navbar appearance
     [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setBarTintColor:[UIColor navyColor]];
     [[UINavigationBar appearance] setTintColor:[UIColor leafColor]];
