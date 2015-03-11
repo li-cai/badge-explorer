@@ -80,7 +80,7 @@ static const CGFloat kBadgeSize = 110.f;
     // view all button
     self.viewAllButton = [[BEPrimaryButton alloc] init];
     [self.viewAllButton setTitle:NSLocalizedString(@"View All", nil)
-                   forState:UIControlStateNormal];
+                        forState:UIControlStateNormal];
     self.viewAllButton.hidden = YES;
 
     [self.viewAllButton addTarget:self
